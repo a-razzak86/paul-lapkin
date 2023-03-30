@@ -1,0 +1,560 @@
+/* -------------------------------------
+    Project Name
+    url
+
+------------------------------------- */
+
+/* -------------------------------------
+        Index
+        1. Common css
+        2. Hero
+        3. About
+        4. Process
+        5. Work experience
+        6. Portfolio
+        7. Testimonial
+        8. CONTACT
+------------------------------------- */
+
+/* -------------------------------------
+        1. Common css
+------------------------------------- */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 10px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.5;
+    text-rendering: optimizelegibility;
+}
+
+a {
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 650%;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 400%;
+}
+h3{
+    font-size: 260%;
+    color: #fff;
+}
+
+h4 {
+    font-size: 160%;
+}
+
+ul{
+    padding-left: 0;
+}
+
+p{
+    margin-top: 0;
+}
+
+/* -------------------------------------
+        Re-useable components
+------------------------------------- */
+
+.row{
+    max-width: 1180px;
+    margin: auto;
+}
+
+section {
+    padding: 150px 0;
+}
+
+.btn:link,
+.btn:visited,
+.btn{
+    width: 200px;
+    color: #fff;
+    background: #FF463E;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 160%;
+    transition: 0.2s;
+    border: 2px solid #FF463E;
+    text-decoration: none;
+}
+
+.btn:hover,
+ .btn:active{
+    background: transparent;
+    border: 2px solid #FF463E;
+    color: #FF463E;
+}
+
+.title-section{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title-section p{
+    font-family: 'Raleway', sans-serif; 
+    font-weight: 700;
+    font-size: 160%;
+    color: #737373;
+    margin-top: 30px;
+    display: inline-block;
+}
+
+/* -------------------------------------
+        2. Hero
+------------------------------------- */
+
+#hero{
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.849),rgba(0, 0, 0, 0.801)), url(img/hero.jpg) no-repeat center center / cover;
+}
+
+#hero h1{
+    color: #fff;
+}
+
+nav.uk-sticky-fixed{
+    background: #000;
+}
+
+nav.uk-sticky-fixed .logo,
+nav.uk-sticky-fixed .nav-icon {
+    margin: 20px 0;
+}
+
+.uk-link-toggle:hover .uk-link, .uk-link:hover, a:hover{
+    color: #000;
+}
+
+.logo{
+    height: 45px;
+    margin-top: 45px;
+    float: left;
+}
+
+.nav-icon {
+    margin-top: 45px;
+    float: right;
+    color: #000;
+  
+}
+
+.nav-icon ion-icon{
+    background: #fff;
+   border: 1px solid #fff;
+   font-size: 43px; 
+}
+
+.hero-text-box {
+    color: #fff;
+    width: 1180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+h1::before {
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+
+h1::after {
+    content: '';
+    height: 2px;
+    width: 100%;
+    display: block;
+    background: #fff;
+}
+
+.hero-text-box span {
+    font-size: 240%;
+    margin-top: 15px;
+    display: inline-block;
+}
+
+
+/* -------------------------------------
+          3. About
+------------------------------------- */
+
+.grid-about-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 25px;
+}
+
+.paul {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    width: 100%
+}
+
+#about .intro{
+    font-size: 180%;
+    font-weight: 700;
+    color: #6f6f6f;
+}
+
+.grid-about-items p{
+    font-size: 200%;
+    margin: 20px 0;
+    color: #ababab;
+}
+
+
+/* -------------------------------------
+          4. Process
+------------------------------------- */
+
+#process{
+    background: #f6f6f6;
+}
+
+.process-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    color: #fff;
+    text-align: center;
+}
+.process-items {
+    background: #000;
+    padding: 60px 0;
+}
+
+.process-items h4{
+    color: #fff;
+}
+
+
+
+.process-items ion-icon {
+    font-size: 400%;
+    margin-bottom: 30px;
+}
+
+.process-items:nth-child(1) {
+    background: #10C6FC;
+}
+
+.process-items:nth-child(2) {
+    background: #835AEB;
+}
+
+
+.process-items:nth-child(3) {
+    background: #002453;
+}
+
+
+.process-items:nth-child(4) {
+    background: #FF2B4A;
+}
+
+
+/* -------------------------------------
+          5. Work experience
+------------------------------------- */
+
+#experience{
+    background: url(img/experience.jpg) no-repeat center center / cover;
+}
+
+.experience-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    color: #fff;
+}
+
+.experience-items,
+.education-items{
+    background:rgba(0, 0, 0, 0.701);
+    padding: 60px 60px;
+}
+
+.experience-items h3,
+.education-items h3{
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 260%;
+    text-transform: uppercase;
+}
+
+.job,
+.education{
+    margin: 25px 0px;
+}
+
+.experience-items span,
+.education-items span{
+    display: inline-block;
+    margin: 15px 0px;
+    font-size: 160%;
+    color: #B3B4C0;
+}
+
+.experience-items h4,
+.education-items h4{
+    font-size: 180%;
+    color: #B3B4C0;
+}
+
+.experience-container hr{
+    border: 0;
+    border-bottom: 1px solid #B3B4C0;
+}
+
+.job p,
+.education p{
+    font-size: 160%;
+    color: #B3B4C0;
+}
+
+/* -------------------------------------
+          6. Portfolio
+------------------------------------- */
+
+.portfolio-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(287.5px, auto);
+}
+
+.portfolio-items img{
+    background: #000;
+    width: 100%;
+    height: 100%;
+   
+}
+
+.portfolio-items:nth-child(5){
+    grid-column: 1/3;
+    height: 287.5px;
+}
+
+.uk-lightbox{
+    font-size: 160%;
+    background:rgba(0, 0, 0, 0.8);
+}
+
+
+.portfolio-filter{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-filter button{
+    color: #fff;
+    padding: 5px 10px;
+    background: #000;
+    border: 1px solid #000;
+    margin: 0 5px;
+    font-size: 160%;
+}
+
+.portfolio-filter button:hover {
+    background: #FF2B4A;
+    border: 1px solid #FF2B4A;
+}
+
+.portfolio-filter .mixitup-control-active{
+    background: #FF2B4A;
+    border: 1px solid #FF2B4A;
+}
+
+
+
+ /* -------------------------------------
+          7. Testimonial
+------------------------------------- */
+
+#testimonial{
+    background: url(img/testimonial.jpg) no-repeat center top / cover;
+}
+
+.testimonial-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.quote{
+    height: 45px;
+}
+
+#testimonial p{
+    font-size: 160%;
+    color: #2E645F;
+    margin: 35px 0;
+}
+
+.signature{
+    margin-bottom: 30px;
+}
+
+
+#testimonial span{
+    margin-top: 10px;
+    font-size: 140%;
+    display: inline-block;
+}
+
+/* -------------------------------------
+            8. CONTACT
+------------------------------------- */
+
+#contact{
+    background: url(img/contact.jpg) no-repeat center center / cover;
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.contact-container h3{
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.contact-items:nth-child(1){
+    background:rgba(0, 0, 0, 0.701);
+    padding: 45px 30px;
+}
+
+
+.single-form textarea {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 140%;
+    margin: 10px 0;
+    padding: 10px 0;
+    padding-left: 10px;
+}
+
+.single-form input[type="text"],
+.single-form input[type="email"] {
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    font-size: 140%;
+    margin: 10px 0;
+    padding: 10px;
+  
+}
+
+.single-form-btn{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.address-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+}
+
+.address-items{
+    background:rgba(0, 0, 0, 0.801);
+    padding: 45px 30px;
+}
+
+.address-items p{
+    font-size: 140%;
+    color: #fff;
+}
+
+.single-form-btn{
+    animation-duration: 5s;
+}
+
+/* -------------------------------------
+            9. FOOTER
+------------------------------------- */
+
+#footer{
+    background: #222;
+    text-align: center;
+    padding: 60px 0;
+}
+
+#footer ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+
+#footer ul li a ion-icon{
+    color: #fff;
+    font-size: 260%;
+    border-right: 1px solid #fff;
+    padding: 0 10px;
+}
+
+#footer ul li:hover a ion-icon{
+    color: #ff2b4a;
+}
+
+.social-icon{
+    margin-bottom: 15px;
+}
+
+.copyright{
+    color: #fff;
+    font-size: 120%;
+}
+
+.totop{
+    margin-top: 25px;
+    
+}
+
+.totop .uk-totop {
+    padding: 10px 6px;
+    color: #999;
+    transition: color .1s ease-in-out;
+    border: 1px solid #fff;
+}
+
+.totop .uk-totop:hover{
+    background: #fff;
+    color: #000;
+}
